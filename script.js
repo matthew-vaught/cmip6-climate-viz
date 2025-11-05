@@ -16,7 +16,7 @@ const tooltip = d3.select("body")
   .style("opacity", 0);
 
 // Load CSV
-d3.csv("web_data/temperature_trends.csv").then(data => {
+d3.csv("temperature_trends.csv").then(data => {
   data.forEach(d => {
     d.year = +d.year;
     d.temperature_anomaly = +d.temperature_anomaly;
@@ -99,4 +99,5 @@ d3.csv("web_data/temperature_trends.csv").then(data => {
   d3.select("#scenario-select").on("change", (event) => {
     update(event.target.value);
   });
+
 });
