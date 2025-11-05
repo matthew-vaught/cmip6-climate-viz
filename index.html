@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CMIP6 Temperature Trends Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🌡️ CMIP6 Temperature Trend Explorer</h1>
+    <p>Select an emission scenario to explore global temperature trends (1850–2100):</p>
+
+    <select id="scenario-select">
+      <option value="ssp126">SSP126 (Low Emissions)</option>
+      <option value="ssp245">SSP245 (Medium Emissions)</option>
+      <option value="ssp585">SSP585 (High Emissions)</option>
+    </select>
+
+    <div id="chart"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

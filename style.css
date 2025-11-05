@@ -1,0 +1,33 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #f8fafc;
+  color: #111827;
+  text-align: center;
+}
+
+.container {
+  margin: 40px auto;
+  width: 90%;
+  max-width: 800px;
+}
+
+#chart {
+  margin-top: 20px;
+}
+
+svg {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 6px;
+  font-size: 13px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  pointer-events: none;
+}
